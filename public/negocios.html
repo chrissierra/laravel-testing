@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ElFaro_GrupoCares_Sierra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSheet1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- FUENTE CARGADA DESDE GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- FUENTE CARGADA DESDE GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!-- FUENTE CARGADA DESDE GOOGLE FONTS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LIBRERIA DE BOOTSTRAP-->
+
+</head>
+
+
+
+<body>
+
+    <header>
+        <img src="logo.png" style="max-width:10%;height:auto;"><h5>El Faro Noticias Grupo Cares_Sierra</h5>
+        <div id="reloj"></div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">El Faro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formulario_contacto">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#crear_articulo">Crear Articulo</a>
+                    </li>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Secciones de Noticias
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="deportes.html">Deportes</a></li>
+                            <li><a class="dropdown-item" href="negocios.html">Negocios</a></li>
+                            <li><a class="dropdown-item" href="index.html">Mundo</a></li>
+                        </ul>
+                    </div>
+
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion Publicidad-->
+    <div class="container-fluid border border-primary">
+        <h1>Aqui va la publicidad- Espacio para Banners, etc.</h1>
+
+    </div>
+
+    <main>
+
+        <!-- Container de Noticias -->
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-lg-3" id="contenedorPrincipalNoticias">
+                <!--Limite de 3 articulos en linea horizontal-->
+                <!-- SubContainer -->
+
+                <div class="card col-sm">
+                    <img class="img-fluid" src="2.2.png">
+                    <div class="card-body">
+                        <h2>Wall Street cae por tercera sesión consecutiva por temor a las alzas de tasas</h2>
+                        <h5 class="card-title">Sección Negocios</h5>
+
+                        <p class="card-text">
+                            NUEVA YORK, 30 ago (Reuters) -Las acciones estadounidenses cerraron a la baja por tercera sesión consecutiva el martes, ya que un
+                            aumento de las ofertas de empleo avivó el temor a que la Reserva Federal de Estados Unidos tenga otra razón para mantener su agresiva
+                            senda de subidas de tasas de interés para combatir la inflación.* El índice de referencia S&P 500 se ha desplomado más de un 5% desde
+                            que el presidente de la Fed, Jerome Powell, reafirmó el viernes la determinación del banco central de subir los tipos, pese a la desaceleración
+                            de la economía.* La demanda por trabajo no mostró señales de enfriamiento, ya que las ofertas de empleo en Estados Unidos aumentaron a 11,239
+                            millones en julio y el dato del mes anterior fue revisado al alza.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <audio controls>
+                            <source src="5.1.mp3" type="audio/mp3">
+                            <p>Your browser doesn't support HTML5 audio</p>
+                        </audio>
+
+                    </div>
+                </div>
+
+                <div class="card col-sm">
+                    <iframe width="320" height="215" src="https://www.youtube.com/embed/OJzTaOmeXSk">
+                    </iframe>
+                    <div class="card-body">
+                        <h2 class="card-title">Alerta cripto: Bitcoin vuelve a caer por debajo de los $20,000</h2>
+                        <h5>Sección Negocios</h5>
+                        <p class="card-text">
+                            La restricción de liquidez sigue, y desde que así lo confirmó la Reserva Federal de Estados Unidos, los inversionistas huyen de los activos
+                            de riesgos, entre estos el Bitcoin y las criptomonedas.La moneda digital cae hoy 2.5%, hundiendo al activo por debajo de los $20,000, el nivel
+                            más bajo desde mediados de julio. Ayer, el Bitcoin se deslizó incluso hasta los $19,525, pero logró recuperarse para volver a caer hoy. El Bitcoin
+                            Bitcoin se debilitó cuando el presidente de la Fed, Jerome Powell, desde su discurso en Jackson Hole, enfatizara que la política agresiva de tipos
+                            continuará hasta ver resultados más seguros de que la inflación está finalmente cediendo.“Los activos de riesgo están en apuros, ya que la lucha de
+                            Powell contra la inflación seguirá siendo agresiva incluso si desencadena una desaceleración económica”, indicaba en un reporte para CNBC, Edward Moya,
+                            analista de la firma financiera Oanda.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+                <div class="card col-sm">
+                    <img style="width:50%;" align="right" src="2.1.png">
+                    <div class="card-body">
+                        <h2 class="card-title">Powell contagia al BCE - Reto: “Aplastar la inflación”, caiga quien caiga</h2>
+                        <h5>Sección Negocios</h5>
+                        <p class="card-text">
+                            Mercados europeos al alza este martes -Ibex 35, CAC 40, DAX...- tras las caídas de ayer. Los expertos siguen monitorizando las declaraciones de expertos
+                            tras las declaraciones de Jerome Powell, presidente de la Reserva Federal estadounidense (Fed), en el simposio de Jackson Hole. “Powell dejó patente su
+                            intención de reducir la inflación, aunque esto conlleve algo de 'dolor' y un periodo sostenido de desaceleración del crecimiento y del mercado laboral”,
+                            señala el equipo de analistas de A&G Banca Privada. Hoy hay intervenciones de miembros de bancos centrales, que seguro continuarán con el discurso hawkish
+                            de Powell en Jackson Hole, tanto por parte del BCE como de la Fed, destacan en Bankinter (BME:BKT).
+
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Row para crear articulos -->
+            <div id="crear_articulo" class="row row-cols-1 row-cols-lg-3 align-items-center justify-content-center">
+                <form class="border border-secondary">
+                    <div class="mb-3">
+                        <h1>Agregar Noticia</h1>
+                        <label for="tituloInput" class="form-label">Titulo de la Noticia</label>
+                        <input type="text" class="form-control" id="tituloInput" aria-describedby="descripcionInputTitulo">
+                        <div id="descripcionInputTitulo" class="form-text">Escribe el título de tu noticia.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cuerpoNoticiaInput" class="form-label">Cuerpo Noticia</label>
+                        <textarea class="form-control" id="cuerpoNoticiaInput" rows="3"></textarea>
+                    </div>
+
+                    <button class="btn btn-outline-success" type="button" onclick="agregarNoticia()">Agregar Noticia</button> <!-- Boton para crear articulos -->
+                </form>
+
+                <!--CARDS DE NOTICIAS CHICAS-->
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            Seccion Noticia chica 1
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Noticia chica 1</h5>
+                            <p class="card-text">lorem ipsum    lorem impsum noticia chica 1</p>
+                            <a href="#" class="btn btn-primary">ir a noticia chica 1</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Seccion Noticia chica 2
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Noticia chica 2</h5>
+                            <p class="card-text">lorem ipsum    lorem impsum noticia chica 2</p>
+                            <a href="#" class="btn btn-primary">ir a noticia chica 2</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Seccion Noticia chica 3
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Noticia chica 3</h5>
+                            <p class="card-text">lorem ipsum    lorem impsum noticia chica 3</p>
+                            <a href="#" class="btn btn-primary">ir a noticia chica 3</a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <!-- Formulario de Contacto -->
+            <div id="formulario_contacto" class="container-fluid border border-secondary">
+                <div class="mb-3">
+                    <h1>FORMULARIO DE CONTACTO</h1>
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Redes Sociales -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Conectate con nosotros a traves de nuestras redes sociales:</span>
+                </div>
+                <!-- Left -->
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>EL FARO NOTICIAS FELIPE CARES_CHRISTOPHER SIERRA
+                            </h6>
+                            <p>
+                                El mejor portal de noticias del mundo mundial.
+                                Noticias de deportes, negocios y mas...
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Secciones
+                            </h6>
+                            <p>
+                                <a href="index.html" class="text-reset">Inicio</a>
+                            </p>
+                            <p>
+                                <a href="deportes.html" class="text-reset">Deportes</a>
+                            </p>
+                            <p>
+                                <a href="negocios.html" class="text-reset">Negocios</a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                links utiles
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">A</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">B</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">C</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">D</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                            <p><i class="fas fa-home me-3"></i> RM, Conchali 1023, Chile</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 569 9567688</p>
+                            <p><i class="fas fa-print me-3"></i> + 02 5675893</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">ELFARO</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+
+
+
+
+    </main>
+
+    <script src="codigo.js"></script>
+    <!-- Librerias JS bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
