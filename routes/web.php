@@ -5,6 +5,7 @@ use App\Http\Controllers\ArticulosController;
 use App\Http\Controllers\FormularioContactoController;
 use App\Models\articulos;
 use App\Models\User;
+use App\Models\FormularioContacto;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,7 +41,8 @@ Route::get('/negocios', function () {
 
 Route::get('/dashboard', function () {
     $usuarios = User::all();
-    return view('dashboard', ['usuarios' => $usuarios ]);
+    $formulario_contacto = FormularioContacto::all();
+    return view('dashboard', ['usuarios' => $usuarios , 'formulario' => $formulario_contacto ]);
 })->name('dashboard');
 
 Route::resource('articulos', ArticulosController::class);
