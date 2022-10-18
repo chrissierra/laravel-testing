@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>ElFaro_GrupoCares_Sierra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link href="{{ URL::asset('styles.css'); }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- FUENTE CARGADA DESDE GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- FUENTE CARGADA DESDE GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!-- FUENTE CARGADA DESDE GOOGLE FONTS-->
@@ -28,12 +28,12 @@
         <div class="container">
 
             {{-- Seccion noticias --}}
-            @include('components.elfaro-components.seccion-noticias-main')
+            @include('components.elfaro-components.negocios.main-negocios')
             {{-- Seccion noticias --}}
 
 
             <!-- Row para crear articulos -->
-            <div id="crear_articulo" class="row row-cols-1 row-cols-lg-3 align-items-center justify-content-center">
+            <div id="crear_articulo" class="row align-items-center justify-content-center">
                 @include('components.elfaro-components.form-agregar-noticias')
                
                 <!--CARDS DE NOTICIAS CHICAS-->

@@ -8,7 +8,7 @@
     <form method="POST" action="{{ route('formulariocontacto.store') }}">
         @csrf
         <div class="mb-3">
-            <h1>FORMULARIO DE CONTACTO</h1>
+            <h1 class="text-center">FORMULARIO DE CONTACTO</h1>
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" name="correo" class="form-control"  placeholder="name@example.com">
         </div>
@@ -26,3 +26,4 @@
         <button type="submit" class="btn btn-primary mb-2">Enviar</button>
     </form>
 </div>
+<div style="margin-bottom: 3em"></div>

@@ -33,3 +33,8 @@ footer {
     font-weight: bold;
 
 }
+
+.form-agregar-noticias {
+    border-radius: 1em;
+    border: .2em solid black;
+}
